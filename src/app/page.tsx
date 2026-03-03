@@ -33,7 +33,7 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <section className="w-full bg-white py-8 md:py-0 md:min-h-[70vh] flex items-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col md:flex-row-reverse items-center gap-8 md:gap-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col md:flex-row items-center gap-8 md:gap-16">
 
           {/* Text Content - appears on the right in RTL */}
           <div className="md:w-[45%] space-y-5 text-center md:text-right">
