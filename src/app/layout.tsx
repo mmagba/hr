@@ -8,7 +8,7 @@ const heebo = Heebo({
 });
 
 export const metadata: Metadata = {
-  title: "Connect - העבודה הבאה שלך",
+  title: "Enas-HR - העבודה הבאה שלך",
   description: "דרושים נציגי שירות ומכירה",
 };
 

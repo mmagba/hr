@@ -28,7 +28,17 @@ export default function LandingPage() {
     <div className="min-h-screen flex flex-col font-sans">
       {/* Navbar area */}
       <header className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <div className="text-[#0a2540] text-3xl font-bold tracking-tight">Connect</div>
+        <div className="flex items-center gap-3">
+          <Image
+            src="/logo.png"
+            alt="Connect Logo"
+            width={180}
+            height={60}
+            className="w-auto h-12 md:h-16 object-contain"
+            priority
+          />
+          <div className="text-[#213988] text-3xl font-bold tracking-tight">Enas-HR</div>
+        </div>
       </header>
 
       {/* Hero Section */}
@@ -37,7 +47,7 @@ export default function LandingPage() {
 
           {/* Text Content - appears on the right in RTL */}
           <div className="md:w-[45%] space-y-5 text-center md:text-right">
-            <h1 className="text-3xl sm:text-4xl md:text-[2.75rem] lg:text-5xl font-extrabold text-[#11235A] leading-snug">
+            <h1 className="text-3xl sm:text-4xl md:text-[2.75rem] lg:text-5xl font-extrabold text-[#213988] leading-snug">
               העבודה הבאה שלך<br />
               במרחק שיחה אחת
             </h1>
@@ -46,7 +56,7 @@ export default function LandingPage() {
               <span className="font-semibold text-gray-800">עבודה מהבית | שכר מתגמל | הכשרה מלאה</span>
             </p>
             <div className="pt-2">
-              <a href="#contact" className="inline-block bg-[#388E3C] hover:bg-green-700 text-white font-bold text-base md:text-lg py-3 px-8 rounded-md shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-[1.02]">
+              <a href="#contact" className="inline-block bg-gradient-to-r from-[#27B0A6] to-[#213988] hover:opacity-90 text-white font-bold text-base md:text-lg py-3 px-8 rounded-md shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-[1.02]">
                 לחצו כאן להרשמה למאגר &raquo;
               </a>
             </div>
@@ -74,7 +84,7 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center divide-y md:divide-y-0 md:divide-x md:divide-x-reverse divide-gray-200">
 
             <div className="flex flex-col items-center pt-8 md:pt-0 pb-8 md:pb-0 px-4">
-              <div className="w-16 h-16 text-[#1565C0] flex items-center justify-center mb-4">
+              <div className="w-16 h-16 text-[#213988] flex items-center justify-center mb-4">
                 <Rocket size={48} strokeWidth={1.5} />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">מסלול ישיר לראיון</h3>
@@ -84,7 +94,7 @@ export default function LandingPage() {
             </div>
 
             <div className="flex flex-col items-center pt-8 md:pt-0 pb-8 md:pb-0 px-4">
-              <div className="w-16 h-16 text-[#1565C0] flex items-center justify-center mb-4">
+              <div className="w-16 h-16 text-[#213988] flex items-center justify-center mb-4">
                 <Home size={48} strokeWidth={1.5} />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">עבודה מהבית (או היברידי)</h3>
@@ -94,10 +104,10 @@ export default function LandingPage() {
             </div>
 
             <div className="flex flex-col items-center pt-8 md:pt-0 px-4">
-              <div className="w-16 h-16 text-[#1565C0] flex items-center justify-center mb-4 relative">
-                <HelpCircle size={40} strokeWidth={1.5} className="absolute -top-1 -right-2 text-[#1565C0] bg-white rounded-full p-0.5" />
-                <div className="w-10 h-10 border-2 border-[#1565C0] rounded-full overflow-hidden flex items-end justify-center">
-                  <div className="w-6 h-6 bg-[#1565C0] rounded-t-full"></div>
+              <div className="w-16 h-16 text-[#213988] flex items-center justify-center mb-4 relative">
+                <HelpCircle size={40} strokeWidth={1.5} className="absolute -top-1 -right-2 text-[#213988] bg-white rounded-full p-0.5" />
+                <div className="w-10 h-10 border-2 border-[#213988] rounded-full overflow-hidden flex items-end justify-center">
+                  <div className="w-6 h-6 bg-[#213988] rounded-t-full"></div>
                 </div>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">ללא ניסיון? אין בעיה.</h3>
@@ -127,7 +137,7 @@ export default function LandingPage() {
                 id="fullName"
                 type="text"
                 required
-                className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1565C0] focus:border-transparent text-right bg-white text-gray-900"
+                className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#27B0A6] focus:border-transparent text-right bg-white text-gray-900"
                 value={formData.fullName}
                 onChange={e => setFormData({ ...formData, fullName: e.target.value })}
               />
@@ -140,7 +150,7 @@ export default function LandingPage() {
                 type="tel"
                 required
                 dir="ltr"
-                className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1565C0] focus:border-transparent text-right bg-white text-gray-900"
+                className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#27B0A6] focus:border-transparent text-right bg-white text-gray-900"
                 value={formData.phone}
                 onChange={e => setFormData({ ...formData, phone: e.target.value })}
               />
@@ -152,7 +162,7 @@ export default function LandingPage() {
                 id="city"
                 type="text"
                 required
-                className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1565C0] focus:border-transparent text-right bg-white text-gray-900"
+                className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#27B0A6] focus:border-transparent text-right bg-white text-gray-900"
                 value={formData.city}
                 onChange={e => setFormData({ ...formData, city: e.target.value })}
               />
@@ -162,7 +172,7 @@ export default function LandingPage() {
               <button
                 type="submit"
                 disabled={status === 'submitting'}
-                className="w-full bg-[#1565C0] hover:bg-blue-800 text-white font-semibold py-[9px] px-8 rounded shadow-md transition-colors duration-200 flex items-center justify-center disabled:opacity-70 h-[42px] m-0 self-end"
+                className="w-full bg-[#213988] hover:bg-[#1a2d6b] text-white font-semibold py-[9px] px-8 rounded shadow-md transition-colors duration-200 flex items-center justify-center disabled:opacity-70 h-[42px] m-0 self-end"
               >
                 {status === 'submitting' ? 'שולח...' : 'submit'}
               </button>
