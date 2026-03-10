@@ -34,10 +34,10 @@ export default function LandingPage() {
             alt="Connect Logo"
             width={180}
             height={60}
-            className="w-auto h-12 md:h-16 object-contain"
+            className="w-auto h-10 md:h-14 object-contain"
             priority
           />
-          <div className="text-[#213988] text-3xl font-bold tracking-tight">Enas-HR</div>
+          <div className="text-[#213988] text-3xl md:text-4xl font-bold tracking-tight mt-3">Enas-HR</div>
         </div>
       </header>
 
@@ -53,7 +53,7 @@ export default function LandingPage() {
             </h1>
             <p className="text-base md:text-lg text-gray-600 leading-relaxed">
               דרושים נציגי שירות ומכירה דוברי ערבית לחברות הגדולות במשק.<br />
-              <span className="font-semibold text-gray-800">עבודה מהבית | שכר מתגמל | הכשרה מלאה</span>
+              <span className="font-semibold text-gray-800">מסלול מהיר לריאיון | שכר מתגמל | הכשרה מלאה</span>
             </p>
             <div className="pt-2">
               <a href="#contact" className="inline-block bg-gradient-to-r from-[#27B0A6] to-[#213988] hover:opacity-90 text-white font-bold text-base md:text-lg py-3 px-8 rounded-md shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-[1.02]">
@@ -97,7 +97,7 @@ export default function LandingPage() {
               <div className="w-16 h-16 text-[#213988] flex items-center justify-center mb-4">
                 <Home size={48} strokeWidth={1.5} />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">עבודה מהבית (או היברידי)</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">אפשרות לעבודה מהבית (או היברידי)</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
                 (חסכו זמן בפקקים, הוצאות נסיעה וזמן יקר. תהנו מאיזון מושלם בין בית לעבודה עם מגוון משרות...)
               </p>
@@ -112,7 +112,7 @@ export default function LandingPage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">ללא ניסיון? אין בעיה.</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
-                (אנחנו מחפשים פוטנציאל, דרייוו ויכולת למידה. כל החברות מספקות הכשרה מלאה ובתשלום...)
+                (אנחנו מחפשים פוטנציאל, מוטיביציה ויכולת למידה. כל החברות מספקות הכשרה מלאה ובתשלום...)
               </p>
             </div>
 
@@ -172,9 +172,9 @@ export default function LandingPage() {
               <button
                 type="submit"
                 disabled={status === 'submitting'}
-                className="w-full bg-[#213988] hover:bg-[#1a2d6b] text-white font-semibold py-[9px] px-8 rounded shadow-md transition-colors duration-200 flex items-center justify-center disabled:opacity-70 h-[42px] m-0 self-end"
+                className="w-full bg-[#213988] hover:bg-[#1a2d6b] text-white font-semibold py-[9px] px-8 rounded shadow-md transition-colors duration-200 flex items-center justify-center disabled:opacity-70 h-[42px] m-0 self-end cursor-pointer"
               >
-                {status === 'submitting' ? 'שולח...' : 'submit'}
+                {status === 'submitting' ? 'שולח...' : 'שלח'}
               </button>
             </div>
 
