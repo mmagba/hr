@@ -140,6 +140,7 @@ export default function LandingPage() {
                 className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#27B0A6] focus:border-transparent text-right bg-white text-gray-900"
                 value={formData.fullName}
                 onChange={e => setFormData({ ...formData, fullName: e.target.value })}
+                suppressHydrationWarning
               />
             </div>
 
@@ -153,6 +154,7 @@ export default function LandingPage() {
                 className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#27B0A6] focus:border-transparent text-right bg-white text-gray-900"
                 value={formData.phone}
                 onChange={e => setFormData({ ...formData, phone: e.target.value })}
+                suppressHydrationWarning
               />
             </div>
 
@@ -165,6 +167,7 @@ export default function LandingPage() {
                 className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#27B0A6] focus:border-transparent text-right bg-white text-gray-900"
                 value={formData.city}
                 onChange={e => setFormData({ ...formData, city: e.target.value })}
+                suppressHydrationWarning
               />
             </div>
 
@@ -173,6 +176,7 @@ export default function LandingPage() {
                 type="submit"
                 disabled={status === 'submitting'}
                 className="w-full bg-[#213988] hover:bg-[#1a2d6b] text-white font-semibold py-[9px] px-8 rounded shadow-md transition-colors duration-200 flex items-center justify-center disabled:opacity-70 h-[42px] m-0 self-end cursor-pointer"
+                suppressHydrationWarning
               >
                 {status === 'submitting' ? 'שולח...' : 'שלח'}
               </button>
