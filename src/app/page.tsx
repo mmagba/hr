@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image";
+import Link from "next/link";
 import { Rocket, Home, HelpCircle } from "lucide-react";
 import { useState } from "react";
 
@@ -31,7 +32,7 @@ export default function LandingPage() {
         <div className="flex items-center gap-3">
           <Image
             src="/logo.png"
-            alt="Connect Logo"
+            alt="לוגו Enas-HR"
             width={180}
             height={60}
             className="w-auto h-10 md:h-14 object-contain"
@@ -41,6 +42,7 @@ export default function LandingPage() {
         </div>
       </header>
 
+      <main className="flex-1">
       {/* Hero Section */}
       <section className="w-full bg-white py-8 md:py-0 md:min-h-[70vh] flex items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col md:flex-row items-center gap-8 md:gap-16">
@@ -56,7 +58,7 @@ export default function LandingPage() {
               <span className="font-semibold text-gray-800">מסלול מהיר לריאיון | שכר מתגמל | הכשרה מלאה</span>
             </p>
             <div className="pt-2">
-              <a href="#contact" className="inline-block bg-gradient-to-r from-[#27B0A6] to-[#213988] hover:opacity-90 text-white font-bold text-base md:text-lg py-3 px-8 rounded-md shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-[1.02]">
+              <a href="#contact" className="inline-block bg-gradient-to-r from-[#1D827B] to-[#213988] hover:opacity-90 text-white font-bold text-base md:text-lg py-3 px-8 rounded-md shadow-lg transition-all duration-200 hover:shadow-xl hover:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#213988] focus-visible:ring-offset-2">
                 לחצו כאן להרשמה למאגר &raquo;
               </a>
             </div>
@@ -67,7 +69,7 @@ export default function LandingPage() {
             <div className="relative w-full max-w-xl aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/hero.png"
-                alt="Woman working from home with headset"
+                alt="אישה עובדת מהבית עם אוזניות מול מחשב"
                 fill
                 className="object-cover"
                 priority
@@ -85,7 +87,7 @@ export default function LandingPage() {
 
             <div className="flex flex-col items-center pt-8 md:pt-0 pb-8 md:pb-0 px-4">
               <div className="w-16 h-16 text-[#213988] flex items-center justify-center mb-4">
-                <Rocket size={48} strokeWidth={1.5} />
+                <Rocket size={48} strokeWidth={1.5} aria-hidden="true" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">מסלול ישיר לראיון</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
@@ -95,7 +97,7 @@ export default function LandingPage() {
 
             <div className="flex flex-col items-center pt-8 md:pt-0 pb-8 md:pb-0 px-4">
               <div className="w-16 h-16 text-[#213988] flex items-center justify-center mb-4">
-                <Home size={48} strokeWidth={1.5} />
+                <Home size={48} strokeWidth={1.5} aria-hidden="true" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">אפשרות לעבודה מהבית (או היברידי)</h3>
               <p className="text-gray-600 leading-relaxed text-sm">
@@ -105,7 +107,7 @@ export default function LandingPage() {
 
             <div className="flex flex-col items-center pt-8 md:pt-0 px-4">
               <div className="w-16 h-16 text-[#213988] flex items-center justify-center mb-4 relative">
-                <HelpCircle size={40} strokeWidth={1.5} className="absolute -top-1 -right-2 text-[#213988] bg-white rounded-full p-0.5" />
+                <HelpCircle size={40} strokeWidth={1.5} className="absolute -top-1 -right-2 text-[#213988] bg-white rounded-full p-0.5" aria-hidden="true" />
                 <div className="w-10 h-10 border-2 border-[#213988] rounded-full overflow-hidden flex items-end justify-center">
                   <div className="w-6 h-6 bg-[#213988] rounded-t-full"></div>
                 </div>
@@ -137,7 +139,7 @@ export default function LandingPage() {
                 id="fullName"
                 type="text"
                 required
-                className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#27B0A6] focus:border-transparent text-right bg-white text-gray-900"
+                className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1D827B] focus:border-transparent text-right bg-white text-gray-900"
                 value={formData.fullName}
                 onChange={e => setFormData({ ...formData, fullName: e.target.value })}
                 suppressHydrationWarning
@@ -151,7 +153,7 @@ export default function LandingPage() {
                 type="tel"
                 required
                 dir="ltr"
-                className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#27B0A6] focus:border-transparent text-right bg-white text-gray-900"
+                className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1D827B] focus:border-transparent text-right bg-white text-gray-900"
                 value={formData.phone}
                 onChange={e => setFormData({ ...formData, phone: e.target.value })}
                 suppressHydrationWarning
@@ -164,7 +166,7 @@ export default function LandingPage() {
                 id="city"
                 type="text"
                 required
-                className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#27B0A6] focus:border-transparent text-right bg-white text-gray-900"
+                className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1D827B] focus:border-transparent text-right bg-white text-gray-900"
                 value={formData.city}
                 onChange={e => setFormData({ ...formData, city: e.target.value })}
                 suppressHydrationWarning
@@ -175,7 +177,7 @@ export default function LandingPage() {
               <button
                 type="submit"
                 disabled={status === 'submitting'}
-                className="w-full bg-[#213988] hover:bg-[#1a2d6b] text-white font-semibold py-[9px] px-8 rounded shadow-md transition-colors duration-200 flex items-center justify-center disabled:opacity-70 h-[42px] m-0 self-end cursor-pointer"
+                className="w-full bg-[#213988] hover:bg-[#1a2d6b] text-white font-semibold py-[9px] px-8 rounded shadow-md transition-colors duration-200 flex items-center justify-center disabled:opacity-70 h-[42px] m-0 self-end cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1D827B] focus-visible:ring-offset-2 focus-visible:ring-offset-[#F3F4F6]"
                 suppressHydrationWarning
               >
                 {status === 'submitting' ? 'שולח...' : 'שלח'}
@@ -196,6 +198,16 @@ export default function LandingPage() {
           )}
         </div>
       </section>
+      </main>
+
+      {/* Footer Section */}
+      <footer className="bg-white border-t border-gray-200 py-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <Link href="/accessibility" className="text-sm text-[#213988] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#213988] focus-visible:ring-offset-2 rounded px-1">
+            הצהרת נגישות
+          </Link>
+        </div>
+      </footer>
     </div>
   );
 }
