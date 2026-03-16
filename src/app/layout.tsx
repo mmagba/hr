@@ -24,6 +24,12 @@ export default function RootLayout({
         className={`${heebo.variable} antialiased font-sans`}
         suppressHydrationWarning
       >
+        <a 
+          href="#main-content" 
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:right-4 focus:z-50 focus:bg-white focus:text-[#213988] focus:p-4 focus:rounded-md focus:shadow-md focus:outline-none focus:ring-2 focus:ring-[#213988]"
+        >
+          דלג לתוכן המרכזי
+        </a>
         {children}
         <Analytics />
       </body>

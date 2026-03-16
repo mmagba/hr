@@ -42,7 +42,7 @@ export default function LandingPage() {
         </div>
       </header>
 
-      <main className="flex-1">
+      <main id="main-content" className="flex-1">
         {/* Hero Section */}
         <section className="w-full bg-white py-8 md:py-0 md:min-h-[70vh] flex items-center">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col md:flex-row items-center gap-8 md:gap-16">
@@ -142,6 +142,7 @@ export default function LandingPage() {
                   className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1D827B] focus:border-transparent text-right bg-white text-gray-900"
                   value={formData.fullName}
                   onChange={e => setFormData({ ...formData, fullName: e.target.value })}
+                  autoComplete="name"
                   suppressHydrationWarning
                 />
               </div>
@@ -156,6 +157,7 @@ export default function LandingPage() {
                   className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1D827B] focus:border-transparent text-right bg-white text-gray-900"
                   value={formData.phone}
                   onChange={e => setFormData({ ...formData, phone: e.target.value })}
+                  autoComplete="tel"
                   suppressHydrationWarning
                 />
               </div>
@@ -169,6 +171,7 @@ export default function LandingPage() {
                   className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#1D827B] focus:border-transparent text-right bg-white text-gray-900"
                   value={formData.city}
                   onChange={e => setFormData({ ...formData, city: e.target.value })}
+                  autoComplete="address-level2"
                   suppressHydrationWarning
                 />
               </div>
@@ -187,12 +190,12 @@ export default function LandingPage() {
             </form>
 
             {status === 'success' && (
-              <div className="mt-8 p-4 bg-green-50 text-green-800 rounded-md text-center border border-green-200 w-full max-w-4xl mx-auto">
+              <div role="status" aria-live="polite" className="mt-8 p-4 bg-green-50 text-green-800 rounded-md text-center border border-green-200 w-full max-w-4xl mx-auto">
                 תודה רבה! פנייתך התקבלה בהצלחה. נחזור אליך בהקדם.
               </div>
             )}
             {status === 'error' && (
-              <div className="mt-8 p-4 bg-red-50 text-red-800 rounded-md text-center border border-red-200 w-full max-w-4xl mx-auto">
+              <div role="alert" aria-live="assertive" className="mt-8 p-4 bg-red-50 text-red-800 rounded-md text-center border border-red-200 w-full max-w-4xl mx-auto">
                 אירעה שגיאה בשליחת הטופס. אנא נסה שוב.
               </div>
             )}
