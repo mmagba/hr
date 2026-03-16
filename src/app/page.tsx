@@ -202,9 +202,13 @@ export default function LandingPage() {
 
       {/* Footer Section */}
       <footer className="bg-white border-t border-gray-200 py-6">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-wrap justify-center items-center gap-4">
           <Link href="/accessibility" className="text-sm text-[#213988] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#213988] focus-visible:ring-offset-2 rounded px-1">
             הצהרת נגישות
+          </Link>
+          <span className="text-gray-300" aria-hidden="true">|</span>
+          <Link href="/privacy" className="text-sm text-[#213988] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#213988] focus-visible:ring-offset-2 rounded px-1">
+            מדיניות פרטיות
           </Link>
         </div>
       </footer>
