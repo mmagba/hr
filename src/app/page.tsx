@@ -89,7 +89,7 @@ export default function LandingPage() {
                 <div className="w-16 h-16 text-[#213988] flex items-center justify-center mb-4">
                   <Rocket size={48} strokeWidth={1.5} aria-hidden="true" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">מסלול ישיר לראיון</h3>
+                <h2 className="text-xl font-bold text-gray-900 mb-3">מסלול ישיר לראיון</h2>
                 <p className="text-gray-600 leading-relaxed text-sm">
                   (אנחנו עוקפים את חברות ההשמה הרגילות ומקשרים אתכם ישירות אל מנהל משאבי אנוש בחברה...)
                 </p>
@@ -99,7 +99,7 @@ export default function LandingPage() {
                 <div className="w-16 h-16 text-[#213988] flex items-center justify-center mb-4">
                   <Home size={48} strokeWidth={1.5} aria-hidden="true" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">אפשרות לעבודה מהבית (או היברידי)</h3>
+                <h2 className="text-xl font-bold text-gray-900 mb-3">אפשרות לעבודה מהבית (או היברידי)</h2>
                 <p className="text-gray-600 leading-relaxed text-sm">
                   (חסכו זמן בפקקים, הוצאות נסיעה וזמן יקר. תהנו מאיזון מושלם בין בית לעבודה עם מגוון משרות...)
                 </p>
@@ -112,7 +112,7 @@ export default function LandingPage() {
                     <div className="w-6 h-6 bg-[#213988] rounded-t-full"></div>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">ללא ניסיון? אין בעיה.</h3>
+                <h2 className="text-xl font-bold text-gray-900 mb-3">ללא ניסיון? אין בעיה.</h2>
                 <p className="text-gray-600 leading-relaxed text-sm">
                   (אנחנו מחפשים פוטנציאל, מוטיביציה ויכולת למידה. כל החברות מספקות הכשרה מלאה ובתשלום...)
                 </p>
