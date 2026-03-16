@@ -48,8 +48,8 @@ export default function AccessibilityStatement() {
             <div className="bg-[#F3F4F6] p-6 rounded-lg mt-4 border border-gray-200 inline-block">
               <h3 className="font-semibold text-gray-900 mb-2">פרטי יצירת קשר לנושאי נגישות:</h3>
               <ul className="space-y-1">
-                <li><strong>טלפון:</strong> <span dir="ltr">050-0000000</span></li>
-                <li><strong>דוא&quot;ל:</strong> <span dir="ltr">email@domain.co.il</span></li>
+                <li><strong>טלפון:</strong> <span dir="ltr">04-6990691</span></li>
+                <li><strong>דוא&quot;ל:</strong> <span dir="ltr">enas.hr.jobs@gmail.com</span></li>
               </ul>
             </div>
           </div>
