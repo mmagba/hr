@@ -234,6 +234,10 @@ export default function LandingPage() {
             <Link href="/privacy" className="text-sm text-[#213988] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#213988] focus-visible:ring-offset-2 rounded px-1">
               מדיניות פרטיות
             </Link>
+            <span className="text-gray-300" aria-hidden="true">|</span>
+            <Link href="/contact" className="text-sm text-[#213988] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#213988] focus-visible:ring-offset-2 rounded px-1">
+              יצירת קשר
+            </Link>
           </div>
 
           {/* Copyright */}
