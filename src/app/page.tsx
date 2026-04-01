@@ -223,6 +223,10 @@ export default function LandingPage() {
 
           {/* Links */}
           <div className="flex flex-wrap justify-center items-center gap-4">
+            <Link href="/about" className="text-sm text-[#213988] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#213988] focus-visible:ring-offset-2 rounded px-1">
+              אודות
+            </Link>
+            <span className="text-gray-300" aria-hidden="true">|</span>
             <Link href="/accessibility" className="text-sm text-[#213988] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#213988] focus-visible:ring-offset-2 rounded px-1">
               הצהרת נגישות
             </Link>
