@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Heebo } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 
 const heebo = Heebo({
@@ -30,6 +31,7 @@ export default function RootLayout({
         >
           דלג לתוכן המרכזי
         </a>
+        <Navbar />
         {children}
         <Analytics />
       </body>
