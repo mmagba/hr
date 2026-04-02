@@ -1,16 +1,7 @@
-import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
-
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans p-6 md:p-12">
       <div className="max-w-4xl mx-auto">
-        <div className="mb-8">
-          <Link href="/" className="inline-flex items-center text-[#213988] hover:underline font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#213988] rounded px-1 py-1">
-            <ArrowLeft className="w-5 h-5 ml-2" aria-hidden="true" />
-            חזרה לדף הבית
-          </Link>
-        </div>
 
         <main id="main-content">
           <h1 className="text-3xl md:text-4xl font-bold text-[#213988] mb-6">אודות</h1>

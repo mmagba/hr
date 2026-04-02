@@ -27,21 +27,6 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen flex flex-col font-sans">
-      {/* Navbar area */}
-      <header className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <div className="flex items-center gap-3">
-          <Image
-            src="/logo.png"
-            alt="לוגו Enas-HR"
-            width={180}
-            height={60}
-            className="w-auto h-10 md:h-14 object-contain"
-            priority
-          />
-          <div className="text-[#213988] text-3xl md:text-4xl font-bold tracking-tight mt-3">Enas-HR</div>
-        </div>
-      </header>
-
       <main id="main-content" className="flex-1">
         {/* Hero Section */}
         <section className="w-full bg-white py-8 md:py-0 md:min-h-[70vh] flex items-center">
